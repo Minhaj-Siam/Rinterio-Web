@@ -706,8 +706,8 @@
         </div>
       </section>
       <!-- Next Project Form -->
-      <section class="my-24 py-24">
-        <div class="container mx-auto px-14">
+      <section class="mt-24 py-24 bg-[url('./assets/bg.jpg')] bg-cover">
+        <div class="container mx-auto md:px-14 p-3">
           <!-- TExt Area -->
           <div>
             <div class="flex flex-col items-center space-y-7 mb-9">
@@ -723,8 +723,8 @@
             </div>
           </div>
           <!-- Grid Input area -->
-          <div class="grid grid-cols-2 gap-11">
-            <!-- First Name -->
+          <div class="grid grid-cols-1 md:grid-cols-2 md:gap-11 gap-7">
+            <!-- First Name space-y-7 md:space-y-0 -->
             <div>
               <input
                 type="text"
@@ -735,27 +735,27 @@
             <div>
               <input
                 type="text"
-                placeholder="First Name*"
+                placeholder="Last Name*"
                 class="py-9 input w-full rounded-3xl text-xl" />
             </div>
             <!-- Phone Number  -->
             <div>
               <input
                 type="text"
-                placeholder="First Name*"
+                placeholder="Phone Number*"
                 class="py-9 input w-full rounded-3xl text-xl" />
             </div>
             <!-- Email -->
             <div>
               <input
                 type="text"
-                placeholder="First Name*"
+                placeholder="Email Number*"
                 class="py-9 input w-full rounded-3xl text-xl" />
             </div>
             <!-- Text Area -->
             <textarea
-              placeholder="Bio"
-              class="textarea text-xl w-full col-span-2 row-span-6 rounded-3xl p-4"></textarea>
+              placeholder="Write your message here"
+              class="textarea text-xl w-full md:col-span-2 row-span-6 rounded-3xl p-4"></textarea>
           </div>
           <button
             class="btn btn-lg rounded-3xl bg-primary-color inline w-full mt-11 text-xl font-extrabold">
@@ -765,6 +765,35 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-[#1C1C1C] space-y-11 py-24">
+      <div class="space-y-6 px-3">
+        <div class="flex justify-center">
+          <!-- PRevious dropdown -->
+          <a class="text-3xl md:text-4xl font-extrabold text-white text-center">
+            <i
+              class="fa-solid fa-arrow-right text-black bg-primary-color rounded-full p-1 -rotate-45"></i>
+            Rinterio</a
+          >
+        </div>
+        <p class="text-gray-400 text-center">
+          The barn house captivates with its blend of rustic charm and modern sophistication <br />
+          featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+      <div class="flex flex-col md:flex-row md:gap-20 lg:gap-32 gap-11 items-center justify-center">
+        <a class="text-gray-400" href="">Home</a>
+        <a class="text-gray-400" href="">Services</a>
+        <a class="text-gray-400" href="">Portfolio</a>
+        <a class="text-gray-400" href="">Blogs </a>
+        <a class="text-gray-400" href="">Contact Us</a>
+      </div>
+      <div class="flex justify-center">
+        <button
+          class="btn btn-lg rounded-3xl bg-primary-color inline mt-11 text-xl font-extrabold border-0">
+          Book Consult
+          <i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black p-1 rounded-full"></i>
+        </button>
+      </div>
+    </footer>
   </body>
 </html>
